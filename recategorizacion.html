@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio H&A</title>
+    <link rel="shortcut icon" href="images/logo-mini.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body onload="verPokemon()">
+
+    <div class="contenedor-index">
+        <header>
+            <nav class="navbar border">
+                <div class="logo"><img src="images/logo-header.png" alt="logo" class="logo-navbar"></div>
+                <ul class="nav-links">
+                    <div class="menu">
+                        <li><a href="index.html" class="text-decoration-none text-muted caca inicio">INICIO</a></li>
+                        <li><a href="recategorizacion.html" class="text-decoration-none text-muted">RECATEGORIZACION</a></li>
+                        <li><a href="servicios.html" class="text-decoration-none text-muted">SERVICIOS</a></li>
+                        <li><a href="contacto.html" class="text-decoration-none text-muted">CONTACTO</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    <article>
+        <div class="banner-recategorizacion">
+            <article>
+                <section>
+                    <div class="slogan-recategorizacion">
+                        <h1>HACE TU RECATEGORIZACION</h1>
+                    </div>
+                </section>
+            </article>|
+        </div>
+    </article>
+
+    <article>
+        <form class="form-container">
+            <h2 class="recategorizacion-titulo">¿QUERES SABER EN QUE CATEGORIA DEL MONOTRIBUTO DEBES ESTAR?</h2>
+        </form>
+    </article>
+
+
+<article class="recategorizacion-calcular">
+    <div id="container" style="display: flex; flex-direction: column; width: 300px; gap: 10px">
+    
+        <button id="calcular" onclick="calcularMonotributo()">Calcular mi categoria de monotributo</button>
+    </div>
+</article>
+
+<article>
+    <form class="form-container">
+        <h2 class="recategorizacion-titulo">¿QUERES ELEGIR TU POKEMON?</h2>
+    </form>
+    <div style="display: flex; flex-direction: column; width: 300px; gap: 10px; margin:auto">
+<img id="pokeImg" >
+<p id="pokeText"></p>
+<input min="1" max="807" type="number" id="pokeNum" onchange="verPokemon()">
+</div>
+</article>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
+

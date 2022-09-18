@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+.logo-navbar {
+  width: 150px;
+  margin: 10px 10px 10px 10px;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 5px 14px;
+  color: #000;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  color: white;
+  grid-area: footer;
+}
+
+.footer-container {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+}
+
+.footer-image {
+  padding: auto;
+}
+
+.footer-info {
+  padding: 0 0 0 50px;
+}
+
+.logo-footer {
+  width: 140px;
+}
+
+/* INDEX */
+
+.banner {
+  background-image: url(images/banner.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.slogan {
+  width: 60%;
+  padding: 50px 25px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  text-align: justify;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.contactenos-boton {
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  top: 20px;
+}
+
+.contactenos-boton a {
+  color: #000;
+}
+
+.novedades {
+  font-size: 1.3rem;
+}
+
+.novedades-titulo {
+  background-color: black;
+  text-align: center;
+  height: 30px;
+  padding: 5px;
+  color: white;
+}
+
+.container-card {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.card-images {
+  width: 250px;
+}
+
+.contenido {
+  text-align: center;
+}
+
+.leer-mas-boton {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.leer-mas-boton a {
+  color: #000;
+}
+
+/* SERVICIOS */
+
+.banner-servicios {
+  background-image: url(images/banner4.png);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.slogan-servicios {
+  padding: 50px 25px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.servicios-titulo {
+  padding: 0 200px;
+}
+
+.servicios-container {
+  display: flex;
+  align-items: center;
+}
+
+.servicios {
+  padding: 20px;
+}
+
+/* RECATEGORIZACION */
+
+.banner-recategorizacion {
+  background-image: url(images/banner-recategorizacion.png);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.slogan-recategorizacion {
+  padding: 50px 25px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.recategorizacion-titulo {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 23px;
+}
+
+.recategorizacion-calcular {
+  display: flex;
+  justify-content: center;
+}
+
+#calcular {
+  background-color: white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  top: 20px;
+}
+
+/* CONTACTO */
+
+.banner-contacto {
+  background-image: url(images/banner-contacto.png);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.slogan-contacto {
+  width: 70%;
+  padding: 40px 35px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.contacto-titulo {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.form-container {
+  width: 100%;
+  display: grid;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.form-input {
+  font-size: 15px;
+  padding: 10px 5px;
+  outline: none;
+  border: none;
+  border: 1px solid #bbb0b0;
+  border-radius: 0.2em;
+}
+
+.form-input--message {
+  resize: none;
+  padding: 20px 5px;
+}
+
+.mapa {
+  text-align: center;
+}
+
+.pokeImg {
+  width: 300px;
+}
+
+.pokep {
+  margin-top: -40px;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.pokeInput {
+  background-color: #3f3250;
+  border: 0;
+  border-radius: 3px;
+  padding: 0.5em;
+  text-align: center;
+  color: #cecece;
+  font-size: 22px;
+}
